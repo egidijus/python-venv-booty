@@ -21,6 +21,7 @@ bash test.sh
 ## Structure
 
 docker/ = dockerfiles to test different distros
+
 docker/test.sh = bash script to build all dockerfiles
 
 template/ = tools to bootstrap python3 once the OS is ready.
