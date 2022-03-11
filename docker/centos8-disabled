@@ -1,0 +1,16 @@
+FROM centos:8
+
+ENV LANG C.UTF-8
+# ENV LC_ALL C.UTF-8
+
+RUN yum install -y bash python3 && \
+mkdir /work
+
+WORKDIR /work
+
+ADD entrypoint.sh /usr/bin/entrypoint
+
+ENTRYPOINT [ "entrypoint" ]
+
+
+

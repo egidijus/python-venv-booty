@@ -1,0 +1,21 @@
+FROM rockylinux:8.5
+
+ENV LANG C.UTF-8
+# ENV LC_ALL C.UTF-8
+
+RUN yum install -y findutils bash \
+  python3 python3-pip virtualenv python3-cryptography python3-setuptools  \
+  python38 \
+  python38-setuptools \
+  python38-cryptography \
+  python39 \
+  python39-setuptools \
+  python39-cryptography
+
+mkdir /work
+
+WORKDIR /work
+
+ADD entrypoint.sh /usr/bin/entrypoint
+
+ENTRYPOINT [ "entrypoint" ]
