@@ -18,9 +18,17 @@ cd docker
 bash test.sh
 ```
 
+## Structure
+
+docker/ = dockerfiles to test different distros
+docker/test.sh = bash script to build all dockerfiles
+
+template/ = tools to bootstrap python3 once the OS is ready.
 
 
-## Notes and ref
+
+
+## Notes and reference
 
 ## Centos 
 you must uninstall the rpm/yum package and install virtualenv with pip 
