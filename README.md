@@ -1,6 +1,8 @@
 # Why?
 in this project i am trying to bootstrap ansible for various versions of python.
-i did some testing before this repo, and found that virtualenv always installs old pip (pip 9)
+i did some testing before this repo, and found that virtualenv always installs old pip (pip 9) on centos 7 for example.
+
+soo i figured, why not check how other flavours handle pip.
 
 
 
